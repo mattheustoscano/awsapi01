@@ -34,6 +34,6 @@ public class ExemploController {
 	
 	@GetMapping("teste")
 	public String getTeste() throws Exception {
-		retuen "Teste"
+		return "Teste";
 	}
 }
