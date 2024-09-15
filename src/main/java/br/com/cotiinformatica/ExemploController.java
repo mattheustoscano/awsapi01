@@ -19,6 +19,7 @@ public class ExemploController {
 		var user = "postgres";
 		var pass = "Coti2024!";
 		
+		
 		var connection = DriverManager.getConnection(host, user, pass);
 		var statement = connection.prepareStatement("select * from alunos order by nome");
 		var resultSet = statement.executeQuery();
