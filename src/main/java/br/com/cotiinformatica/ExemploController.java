@@ -31,4 +31,9 @@ public class ExemploController {
 		connection.close();
 		return alunos;
 	}
+	
+	@GetMapping("teste")
+	public String getTeste() throws Exception {
+		retuen "Teste"
+	}
 }
