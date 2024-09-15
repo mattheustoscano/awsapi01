@@ -15,10 +15,10 @@ public class ExemploController {
 	@GetMapping
 	public List<AlunosDto> get() throws Exception {
 		
+		//teste
 		var host = "jdbc:postgresql://postgresql-coti.cr2ags0gmij2.us-east-1.rds.amazonaws.com:5432/AwsApi01";
 		var user = "postgres";
 		var pass = "Coti2024!";
-		
 		
 		var connection = DriverManager.getConnection(host, user, pass);
 		var statement = connection.prepareStatement("select * from alunos order by nome");
